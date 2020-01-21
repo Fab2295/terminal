@@ -5,30 +5,14 @@ import Terminal from "./terminal";
 import "./App.css";
 
 class App extends React.Component {
-  data = {
-    phrase1: [
-      {
-        phrase: "$ cd dalcy-fabricio",
-        command: true,
-        position: 1,
-      },
-
-      {
-        phrase: "$dalcy-fabricio",
-        command: true,
-        position: 2,
-      },
-
-      {
-        phrase: "$dalcy-fabricio",
-        command: true,
-        position: 2,
-      }
+  state = {
+    phrase: [
+      "`$>`<span style='color: blue'>cd dalcy-fabricio</span>\n`$dalcy-fabricio>` npm start\n`Hello. I'm Dalcy Fabrício`"
     ]
   };
 
   render() {
-    return <Terminal data={} />;
+    return <Terminal data={this.state.phrase} />;
   }
 }
 
