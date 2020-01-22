@@ -15,7 +15,7 @@ class App extends React.Component {
   };
 
   render() {
-    return <Terminal data={this.state.phrase} title={this.state.title}/>;
+    return <Terminal data={this.state.phrase} />;
   }
 }
 
