@@ -4,10 +4,6 @@ import Typed from "typed.js";
 import "./index.css";
 
 export default class TypedJS extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     const { phrase } = this.props;
 
