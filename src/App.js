@@ -7,7 +7,8 @@ import "./App.css";
 class App extends React.Component {
   state = {
     phrase: [
-      "`$>`<span style='color: blue'>cd dalcy-fabricio</span>\n`$dalcy-fabricio>` npm start\n`Hello. I'm Dalcy Fabrício`"
+      "Hello. I'm Dalcy Fabrício",
+      "Hello. I'm <span style='color: red'>Dalcy Fabrício</span>"
     ]
   };
 

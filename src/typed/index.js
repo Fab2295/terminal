@@ -13,15 +13,15 @@ export default class TypedJS extends React.Component {
 
     const options = {
       strings: phrase,
-      typeSpeed: 100
+      typeSpeed: 100,
+      backSpeed: 50
     };
-    // this.el refers to the <span> in the render() method
+
     this.typed = new Typed(this.el, options);
   }
 
   componentWillUnmount() {
-    // Make sure to destroy Typed instance on unmounting
-    // to prevent memory leaks
+    //destroy instance
     this.typed.destroy();
   }
 
