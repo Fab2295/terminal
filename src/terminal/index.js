@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import PropTypes from "prop-types";
+import * as PropTypes from "prop-types";
 
 import TypedJS from "../typed/index";
 
@@ -22,12 +22,15 @@ const Terminal = props => {
 };
 
 Terminal.defaultProps = {
-  title: "Strange"
+  title: "Strange",
+  data: [
+    "<b style='color: red'>You need to pass the String Array</b>\n`<span style='color: blue; font-size= 6px'>Try again...</span>`"
+  ]
 };
 
-Terminal.propsTypes = {
+Terminal.propTypes = {
   title: PropTypes.string,
-  data: PropTypes.array.isRequired
+  data: PropTypes.array
 };
 
 export default Terminal;

@@ -11,11 +11,11 @@ class App extends React.Component {
       "Hello. I'm <span style='color: red'>Dalcy Fabrício</span>"
     ],
 
-    title: "Dalcy"
+    title: "Dalcy Fabrício"
   };
 
   render() {
-    return <Terminal data={this.state.phrase} />;
+    return <Terminal data={this.state.phrase} title={this.state.title} />;
   }
 }
 
