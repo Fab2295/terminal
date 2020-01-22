@@ -26,7 +26,7 @@ Terminal.defaultProps = {
 };
 
 Terminal.propsTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   data: PropTypes.array.isRequired
 };
 
